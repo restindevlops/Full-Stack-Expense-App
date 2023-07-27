@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+   
+    <title>Expense Tracker</title>
+
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
+     crossorigin="anonymous">
+
+     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
+     crossorigin="anonymous"></script> 
+   
+
+  </head>
+  <body>
+
+    <div class="container">
+
+      <div class="details">
+
+        
+          <h1>Expense Details</h1>
+          <form id="my-form">
+            
+          <label for="name">Choose Expense Amount : </label>
+          <input type="number" id="amount" placeholder="Amount" >
+
+          <label for="desc">Choose Description :</label>
+          <input list="descitems" name="description" id="desc" placeholder="Description">
+          <datalist id="descitems">
+            <option value="Petrol">
+            <option value="On Vacation">
+            <option value="Diesel">
+            <option value="Toffle">
+          </datalist>
+
+          <label for="categ">Choose a Category :</label>
+          <input list="categoryitems" name="category" id="categ" placeholder="Category">
+          <datalist id="categoryitems">
+            <option value="Fuel">
+            <option value="Food">
+            <option value="Electricity">
+            <option value="Movie">
+          </datalist>
+
+          <input class="btn1" type="submit" id='submit' value="Add Expense">
+      
+        </form>
+         
+         <ul class="items" id="items"></ul>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js"></script> 
+         <script src="main.js"></script>
+        </div>
+        
+
+    </div>  
+       
+  
+
+  </body>
+</html>
